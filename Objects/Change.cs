@@ -13,6 +13,11 @@ namespace CoinCombo.Objects
       _changeInput = change;
     }
 
+    public int GetInput()
+    {
+      return _changeInput;
+    }
+
       public int[] CountChange ()
       {
         int[] _changeArray = {0, 0, 0 ,0};
