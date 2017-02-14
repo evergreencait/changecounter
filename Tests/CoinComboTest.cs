@@ -17,6 +17,14 @@ namespace CoinCombo.Objects
     public void CountChange_ReturnQuarterAndDime_true()
     {
       int[] changeInt = new int[] {3, 1, 0, 0};
+      Change ChangeTest = new Change(85);
+      Assert.Equal(changeInt, ChangeTest.CountChange());
+    }
+
+    [Fact]
+    public void CountChange_ReturnQuarterAndDimeAndNickel_true()
+    {
+      int[] changeInt = new int[] {3, 1, 1, 0};
       Change ChangeTest = new Change(90);
       Assert.Equal(changeInt, ChangeTest.CountChange());
     }

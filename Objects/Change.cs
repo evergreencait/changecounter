@@ -21,6 +21,9 @@ namespace CoinCombo.Objects
         int dimeChange = _changeInput - (25 * maxQuarters);
         int maxDimes = (dimeChange/10);
         _changeArray[1] = maxDimes;
+        int nickelChange = dimeChange - (10 * maxDimes);
+        int maxNickels = (nickelChange/5);
+        _changeArray[2] = maxNickels;
 
         return _changeArray;
       }
