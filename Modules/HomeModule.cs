@@ -21,8 +21,8 @@ namespace CoinCombo
           changeInfo.Add(changeArray[i]);
         }
         changeInfo.Add(newChange.GetInput());
-        return View{"/results", allChange};
-      }
+        return View["/results", changeInfo];
+      };
     }
   }
 }
